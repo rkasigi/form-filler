@@ -62,6 +62,12 @@ app.factory('OptionsService', function () {
 
         types.push({
             group: 'Other',
+            id: 'static-text',
+            name: 'Static Text'
+        });
+
+        types.push({
+            group: 'Other',
             id: 'text',
             name: 'Text'
         });

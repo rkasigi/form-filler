@@ -388,6 +388,9 @@ var FormFiller = function ($, options) {
                 case 'randomized-list':
                     return field.list[generateNumber(0, field.list.length - 1)];
 
+                case 'static-text':
+                	return field.statictext;
+
                 default:
                     return generatePhrase(element.maxLength);
             }

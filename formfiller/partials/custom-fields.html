@@ -57,6 +57,9 @@
 
             <dt ng-if="field.list">List Items</dt>
             <dd ng-if="field.list">{{field.list | toCsv}}</dd>
+
+            <dt ng-if="field.statictext">Text Value</dt>
+            <dd ng-if="field.statictext">{{field.statictext}}</dd>
         </dl>
     </div>
 </div>
@@ -204,6 +207,14 @@
                     <textarea id="randomized-list" name="randomizedList" rows="5" class="form-control"
                               ng-model="field.list" ng-required="field.type == 'randomized-list'"></textarea>
                     <div class="help-block">Enter each item on a new line.</div>
+                </div>
+            </div>
+            <div class="form-group" ng-if="field.type == 'static-text'"
+                 ng-class="{ 'has-error': fieldForm.statictext.$invalid && !fieldForm.statictext.$pristine }">
+                <label class="col-sm-3 control-label" for="statictext">Text Value</label>
+                <div class="col-sm-9">
+                    <input id="statictext" type="text" name="statictext" class="form-control"
+                           ng-model="field.statictext" ng-required="field.type == 'statictext'"/>
                 </div>
             </div>
         </div>
