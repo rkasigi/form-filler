@@ -6,5 +6,6 @@ This project is forked from [husainshabbir/form-filler](https://github.com/husai
 
 
 Changelog:
-2014-11-29	Rendi Kasigi
+
+* **2014-11-29**
 	* Add new custom field type "**Static Text**", I need a static text instead of random text. So, I added this feature. hope this new feature help you all.
